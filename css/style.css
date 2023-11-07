@@ -1,201 +1,185 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "roboto";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
 }
 
 @font-face {
-    font-family: "roboto";
-    src: url(../fonts/Roboto-Condensed.ttf);
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Condensed.ttf);
 }
-
 /* BODY */
-
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* HEADER */
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  /* nav */
+  /* nav-bar-pages */
+  /* nav-bar-pages-dropdown */
+  /* nav-bar-pages-click */
+  /* search-btn */
+  /* nav-bar-icons */
+}
+#header .header__promo__animation {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+#header .header__promo__animation .header__promo__text {
+  color: white;
+  display: flex;
+  animation: moveText 10s linear infinite;
+  font-style: italic;
+}
+#header .nav-link:hover {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+#header .nav-link .dropdown-toggle:hover {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+#header .dropdown-item:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+#header .nav-link:active {
+  background-color: black;
+  color: white;
+}
+#header .btn {
+  padding: 0%;
+}
+#header .img-nav {
+  height: 32px;
+  align-self: center;
 }
 
-.header__promo__animation {
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    background-color: black;
-}
-
-.header__promo__text {
-    color: white;
-    display: flex;
-    animation: moverTexto 10s linear infinite;
-    font-style: italic;
-}
-
-@keyframes moverTexto {
-    0% {
-        transform: translateX(-0);
-    }
-
-    100% {
-        transform: translateX(100%);
-    }
-}
-
-.dropdown-item:hover {
-    background-color: black;
-    color: white;
-    font-weight: bold;
-}
-
-.nav-link:hover {
-    color: black;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.nav-link .dropdown-toggle:hover {
-    color: black;
-    text-decoration: underline;
-    font-weight: bold;
-
-}
-
-.nav-link:active {
-    background-color: black;
-    color: white;
-}
-
-.btn {
-    padding: 0%;
-}
-
-.img-nav {
-    height: 32px;
-    align-self: center;
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 /* MAIN */
 main {
-    margin-top: 111px;
-    flex-grow: 1;
+  margin-top: 111px;
+  flex-grow: 1;
 }
 
 /* FOOTER */
-
 .footer__principal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
-
-.footer__menu__list {
-    list-style: none;
-    margin: 0px;
+.footer__principal .footer__menu__list {
+  list-style: none;
+  margin: 0px;
 }
-
-.footer__menu__list__item {
-    margin: 10px;
+.footer__principal .footer__menu__list .footer__menu__list__item {
+  margin: 10px;
 }
-
-.footer__menu__list__item a {
-    text-decoration: none;
-    color: black;
-
+.footer__principal .footer__menu__list .footer__menu__list__item a {
+  text-decoration: none;
+  color: black;
 }
-
-.footer__menu__list__item a:hover {
-    color: black;
-    text-decoration: underline;
-    font-weight: bold;
+.footer__principal .footer__menu__list .footer__menu__list__item a:hover {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
 }
-
-.footer__menu__list__item a:active {
-    color: white;
-    background-color: black;
-    padding: 5px;
+.footer__principal .footer__menu__list .footer__menu__list__item a:active {
+  color: white;
+  background-color: black;
+  padding: 5px;
 }
-
-.footer__redes {
-    display: flex;
-    flex-direction: column;
-    padding-right: 2rem;
+.footer__principal .footer__icono {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.footer__redes__text {
-    margin-bottom: 10px;
+.footer__principal .footer__redes {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
 }
-
-.footer__redes__links {
-    display: flex;
-    justify-content: space-between;
+.footer__principal .footer__redes .footer__redes__text {
+  margin-bottom: 10px;
+}
+.footer__principal .footer__redes .footer__redes__links {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__copyright__text {
-    display: flex;
-    justify-content: center;
-    color: white;
-    background-color: black;
-    padding: 5px;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  margin: 0;
 }
-
-
-
-
-
 
 @media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-
-    .d-flex {
-        margin-bottom: 12px;
-    }
-
-    .btn {
-        padding: 0%;
-    }
-
-    .img-nav {
-        height: 32px;
-        align-self: center;
-    }
-    .footer__menu {
-        width: 120px;
-    }
-
-    .footer__menu__list {
-        padding-left: 1rem;
-    }
-
-    .footer__redes {
-        padding-right: 1rem;
-        gap: 10px;
-    }
-
-    .footer__redes__text {
-        display: none;
-    }
-
-    .footer__redes__links {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer__redes__links a {
-        margin-bottom: 10px;
-    }
-
+  body {
+    font-size: 14px;
+  }
+  /* HEADER */
+  /* nav-bar-form */
+  .nav-link {
+    padding-left: 8px;
+  }
+  .d-flex {
+    margin-bottom: 12px;
+  }
+  .d-flex .btn {
+    padding: 0%;
+  }
+  .d-flex .img-nav {
+    height: 32px;
+    align-self: center;
+  }
+  /* FOOTER */
+  .footer__menu {
+    width: 120px;
+  }
+  .footer__menu .footer__menu__list {
+    padding-left: 1rem;
+  }
+  .footer__redes {
+    padding-right: 1rem;
+    gap: 10px;
+  }
+  .footer__redes .footer__redes__text {
+    display: none;
+  }
+  .footer__redes .footer__redes__links {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__redes .footer__redes__links a {
+    margin-bottom: 10px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
