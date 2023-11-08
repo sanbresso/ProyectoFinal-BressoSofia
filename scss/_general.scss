@@ -4,14 +4,11 @@
     box-sizing: border-box;
     font-family: "roboto";
 }
-
 @font-face {
     font-family: "roboto";
     src: url(../fonts/Roboto-Condensed.ttf);
 }
-
 /* BODY */
-
 body {
     display: flex;
     flex-direction: column;
