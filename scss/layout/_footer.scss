@@ -1,5 +1,6 @@
 /* FOOTER */
 .footer__principal {
+    background-color: $header-footer-bg-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,13 +14,10 @@
                 text-decoration: none;
                 color: black;
                 &:hover {
-                    color: black;
-                    text-decoration: underline;
-                    font-weight: bold;
+                    @extend%nav-links-hover;
                 }
                 &:active {
-                    color: white;
-                    background-color: black;
+                    @extend%font-bg;
                     padding: 5px;
                 }
             }
@@ -45,10 +43,8 @@
     }
 }
 .footer__copyright__text {
-    display: flex;
-    justify-content: center;
-    color: white;
-    background-color: black;
+    @extend%flex-center;
+    @extend%font-bg;
     padding: 5px;
     margin: 0;
 }

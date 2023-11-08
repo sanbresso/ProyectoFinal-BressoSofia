@@ -1,3 +1,26 @@
+.footer__principal .footer__menu__list .footer__menu__list__item a:hover, #header .nav-link .dropdown-toggle:hover, #header .nav-link:hover {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#header .nav-link:active, #header .dropdown-item:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.footer__copyright__text, .footer__principal .footer__menu__list .footer__menu__list__item a:active {
+  background-color: black;
+  color: white;
+}
+
+.footer__copyright__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -43,25 +66,6 @@ body {
   animation: moveText 10s linear infinite;
   font-style: italic;
 }
-#header .nav-link:hover {
-  color: black;
-  text-decoration: underline;
-  font-weight: bold;
-}
-#header .nav-link .dropdown-toggle:hover {
-  color: black;
-  text-decoration: underline;
-  font-weight: bold;
-}
-#header .dropdown-item:hover {
-  background-color: black;
-  color: white;
-  font-weight: bold;
-}
-#header .nav-link:active {
-  background-color: black;
-  color: white;
-}
 #header .btn {
   padding: 0%;
 }
@@ -86,6 +90,7 @@ main {
 
 /* FOOTER */
 .footer__principal {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,14 +107,7 @@ main {
   text-decoration: none;
   color: black;
 }
-.footer__principal .footer__menu__list .footer__menu__list__item a:hover {
-  color: black;
-  text-decoration: underline;
-  font-weight: bold;
-}
 .footer__principal .footer__menu__list .footer__menu__list__item a:active {
-  color: white;
-  background-color: black;
   padding: 5px;
 }
 .footer__principal .footer__icono {
@@ -132,10 +130,6 @@ main {
 }
 
 .footer__copyright__text {
-  display: flex;
-  justify-content: center;
-  color: white;
-  background-color: black;
   padding: 5px;
   margin: 0;
 }
@@ -146,7 +140,7 @@ main {
   }
   /* HEADER */
   /* nav-bar-form */
-  .nav-item {
+  .nav-link {
     padding-left: 8px;
   }
   .d-flex {

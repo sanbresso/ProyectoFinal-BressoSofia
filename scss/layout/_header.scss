@@ -5,12 +5,12 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: white;
+    background-color: $header-footer-bg-color;
     .header__promo__animation {
         white-space: nowrap;
         overflow: hidden;
         position: relative;
-        background-color: black;
+        background-color: $promo-bg-color;
         .header__promo__text {
             color: white;
             display: flex;
@@ -21,25 +21,18 @@
     /* nav */
     /* nav-bar-pages */
     .nav-link:hover {
-        color: black;
-        text-decoration: underline;
-        font-weight: bold;
+        @extend%nav-links-hover;
     }
     /* nav-bar-pages-dropdown */
     .nav-link .dropdown-toggle:hover {
-        color: black;
-        text-decoration: underline;
-        font-weight: bold;
+        @extend%nav-links-hover;
     }
     .dropdown-item:hover {
-        background-color: black;
-        color: white;
-        font-weight: bold;
+        @extend%nav-links-bg;
     }
     /* nav-bar-pages-click */
     .nav-link:active {
-        background-color: black;
-        color: white;
+        @extend%nav-links-bg;
     }
     /* search-btn */
     .btn {
