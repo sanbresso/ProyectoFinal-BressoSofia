@@ -2,7 +2,7 @@
     body {
         font-size: 14px;
     }
-    /* HEADER */
+    /* HEADER-GENERAL */
     /* nav-bar-form */
     .nav-link {
         padding-left: 8px;
@@ -17,7 +17,11 @@
             align-self: center;
         }
     }
-    /* FOOTER */
+    /* MAIN-INDEX */
+    .second-row {
+        margin-top: 24px;
+    }
+    /* FOOTER-GENERAL */
     .footer__menu {
         width: 120px;
         .footer__menu__list {

@@ -28,11 +28,11 @@
         @extend%nav-links-hover;
     }
     .dropdown-item:hover {
-        @extend%nav-links-bg;
+        @extend%font-bg;
     }
     /* nav-bar-pages-click */
     .nav-link:active {
-        @extend%nav-links-bg;
+        @extend%font-bg;
     }
     /* search-btn */
     .btn {

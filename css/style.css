@@ -4,13 +4,7 @@
   font-weight: bold;
 }
 
-#header .nav-link:active, #header .dropdown-item:hover {
-  background-color: black;
-  color: white;
-  font-weight: bold;
-}
-
-.footer__copyright__text, .footer__principal .footer__menu__list .footer__menu__list__item a:active {
+.footer__copyright__text, .footer__principal .footer__menu__list .footer__menu__list__item a:active, #header .nav-link:active, #header .dropdown-item:hover {
   background-color: black;
   color: white;
 }
@@ -134,18 +128,36 @@ main {
   margin: 0;
 }
 
-.main__index__gallery {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+/* .main__index__gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+} */
+/* BOOTSTRAP CARDS PARA PRODUCTOS */
+/* MAIN */
+.container {
   margin-top: 50px;
+  margin-bottom: 50px;
+}
+.container .card {
+  border-color: rgba(0, 0, 0, 0.15);
+  border-width: 2px;
+}
+.container .card .card-body {
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
+@font-face {
+  font-family: "roboto-bold";
+  src: url(../fonts/Roboto-BoldCondensed.ttf);
+}
 @media (max-width: 480px) {
   body {
     font-size: 14px;
   }
-  /* HEADER */
+  /* HEADER-GENERAL */
   /* nav-bar-form */
   .nav-link {
     padding-left: 8px;
@@ -160,7 +172,11 @@ main {
     height: 32px;
     align-self: center;
   }
-  /* FOOTER */
+  /* MAIN-INDEX */
+  .second-row {
+    margin-top: 24px;
+  }
+  /* FOOTER-GENERAL */
   .footer__menu {
     width: 120px;
   }
