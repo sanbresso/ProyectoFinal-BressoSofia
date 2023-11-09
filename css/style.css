@@ -78,7 +78,7 @@ body {
 }
 /* MAIN */
 main {
-  margin-top: 111px;
+  margin-top: 101px;
   flex-grow: 1;
 }
 
@@ -128,12 +128,6 @@ main {
   margin: 0;
 }
 
-/* .main__index__gallery {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
-} */
 /* BOOTSTRAP CARDS PARA PRODUCTOS */
 /* MAIN */
 .container {
@@ -147,12 +141,36 @@ main {
 .container .card .card-body {
   padding-top: 10px;
   padding-left: 10px;
+  /* font-family: "roboto-bold"; */
 }
 
-@font-face {
-  font-family: "roboto-bold";
-  src: url(../fonts/Roboto-BoldCondensed.ttf);
+/* @font-face {
+    font-family: "roboto-bold";
+    src: url(../fonts/Roboto-BoldCondensed.ttf);
+} */
+.main__cat {
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.main__cat .main__cat__img {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000;
+}
+.main__cat .main__cat__img img {
+  height: auto;
+  width: 220px;
+}
+
+/* .main__cat__img__info {
+    font-family: "roboto-thin-italic";
+}
+@font-face {
+    font-family: "roboto-thin-italic";
+    src: url(.../);
+} */
 @media (max-width: 480px) {
   body {
     font-size: 14px;

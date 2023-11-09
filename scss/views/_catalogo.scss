@@ -1,0 +1,23 @@
+.main__cat{
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main__cat__img {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    img {
+        height: auto;
+        width: 220px;
+    }
+    
+}
+}
+/* .main__cat__img__info {
+    font-family: "roboto-thin-italic";
+}
+@font-face {
+    font-family: "roboto-thin-italic";
+    src: url(.../);
+} */
