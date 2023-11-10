@@ -1,23 +1,89 @@
-.main__cat{
-    border: 2px solid #000;
+/* main {
+    @extend%flex-center;
+    .main__cat {
+        border: 2px solid red;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: wrap;
+        .main__cat__img {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #000;
+        img {
+            height: auto;
+            width: 220px;
+        }
+        h6 {
+            margin: 0px;
+            color: white;
+            background-color: black;
+            padding: 5px;
+        }
+        h4 {
+            padding: 5px 0px 0px 5px;
+            font-weight: bold;
+            margin: 0px;
+        }
+    }
+    }
+} */
+
+
+main {
+    /* border: 1px solid red; */
     display: flex;
+    align-items:center;
     justify-content: center;
-    align-items: center;
-    .main__cat__img {
-    display: flex;
     flex-direction: column;
-    border: 2px solid #000;
-    img {
-        height: auto;
-        width: 220px;
+}
+.main__title__cat {
+    width: 100%;
+    background-color: black;
+    @extend%flex-center;
+    padding: 15px;
+    p {
+        color: white;
+        @extend%flex-center;
+        margin: 0;
+        font-size:x-large;
     }
     
 }
-}
-/* .main__cat__img__info {
-    font-family: "roboto-thin-italic";
-}
-@font-face {
-    font-family: "roboto-thin-italic";
-    src: url(.../);
-} */
+  
+  .main__cat {
+    margin-top: 25px;
+    /* border: 1px solid black; */
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  .main__cat__prod {
+    width: calc(25% - 20px); 
+    margin-bottom: 25px;
+    
+  }
+  
+  .main__cat__prod img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .cat__img__info {
+    text-align: start;
+    h6 {
+        padding: 5px 0 5px 10px;
+        margin: 0;
+        background-color: black;
+        color: white;
+        font-style: italic;
+    }
+    h4 {
+        padding: 5px 0 0 10px;
+        margin: 0;
+        font-weight: bold;
+    }
+  }
+

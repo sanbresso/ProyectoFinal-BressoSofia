@@ -9,7 +9,7 @@
   color: white;
 }
 
-.footer__copyright__text {
+.main__title__cat p, .main__title__cat, .footer__copyright__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,36 +141,92 @@ main {
 .container .card .card-body {
   padding-top: 10px;
   padding-left: 10px;
-  /* font-family: "roboto-bold"; */
 }
 
-/* @font-face {
-    font-family: "roboto-bold";
-    src: url(../fonts/Roboto-BoldCondensed.ttf);
+/* main {
+    @extend%flex-center;
+    .main__cat {
+        border: 2px solid red;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: wrap;
+        .main__cat__img {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #000;
+        img {
+            height: auto;
+            width: 220px;
+        }
+        h6 {
+            margin: 0px;
+            color: white;
+            background-color: black;
+            padding: 5px;
+        }
+        h4 {
+            padding: 5px 0px 0px 5px;
+            font-weight: bold;
+            margin: 0px;
+        }
+    }
+    }
 } */
-.main__cat {
-  border: 2px solid #000;
+main {
+  /* border: 1px solid red; */
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-.main__cat .main__cat__img {
-  display: flex;
+  justify-content: center;
   flex-direction: column;
-  border: 2px solid #000;
-}
-.main__cat .main__cat__img img {
-  height: auto;
-  width: 220px;
 }
 
-/* .main__cat__img__info {
-    font-family: "roboto-thin-italic";
+.main__title__cat {
+  width: 100%;
+  background-color: black;
+  padding: 15px;
 }
-@font-face {
-    font-family: "roboto-thin-italic";
-    src: url(.../);
-} */
+.main__title__cat p {
+  color: white;
+  margin: 0;
+  font-size: x-large;
+}
+
+.main__cat {
+  margin-top: 25px;
+  /* border: 1px solid black; */
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main__cat__prod {
+  width: calc(25% - 20px);
+  margin-bottom: 25px;
+}
+
+.main__cat__prod img {
+  width: 100%;
+  height: auto;
+}
+
+.cat__img__info {
+  text-align: start;
+}
+.cat__img__info h6 {
+  padding: 5px 0 5px 10px;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-style: italic;
+}
+.cat__img__info h4 {
+  padding: 5px 0 0 10px;
+  margin: 0;
+  font-weight: bold;
+}
+
 @media (max-width: 480px) {
   body {
     font-size: 14px;
