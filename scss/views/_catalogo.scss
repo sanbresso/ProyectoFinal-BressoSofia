@@ -1,37 +1,4 @@
-/* main {
-    @extend%flex-center;
-    .main__cat {
-        border: 2px solid red;
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: wrap;
-        .main__cat__img {
-        display: flex;
-        flex-direction: column;
-        border: 2px solid #000;
-        img {
-            height: auto;
-            width: 220px;
-        }
-        h6 {
-            margin: 0px;
-            color: white;
-            background-color: black;
-            padding: 5px;
-        }
-        h4 {
-            padding: 5px 0px 0px 5px;
-            font-weight: bold;
-            margin: 0px;
-        }
-    }
-    }
-} */
-
-
 main {
-    /* border: 1px solid red; */
     display: flex;
     align-items:center;
     justify-content: center;
@@ -53,7 +20,6 @@ main {
   
   .main__cat {
     margin-top: 25px;
-    /* border: 1px solid black; */
     width: 80%;
     display: flex;
     flex-wrap: wrap;

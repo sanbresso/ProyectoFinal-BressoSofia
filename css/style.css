@@ -143,38 +143,7 @@ main {
   padding-left: 10px;
 }
 
-/* main {
-    @extend%flex-center;
-    .main__cat {
-        border: 2px solid red;
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: wrap;
-        .main__cat__img {
-        display: flex;
-        flex-direction: column;
-        border: 2px solid #000;
-        img {
-            height: auto;
-            width: 220px;
-        }
-        h6 {
-            margin: 0px;
-            color: white;
-            background-color: black;
-            padding: 5px;
-        }
-        h4 {
-            padding: 5px 0px 0px 5px;
-            font-weight: bold;
-            margin: 0px;
-        }
-    }
-    }
-} */
 main {
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,7 +163,6 @@ main {
 
 .main__cat {
   margin-top: 25px;
-  /* border: 1px solid black; */
   width: 80%;
   display: flex;
   flex-wrap: wrap;
@@ -254,10 +222,66 @@ main {
   .main__cat {
     margin-top: 15px;
   }
-  .main__cat__prod {
+  .main__cat .main__cat__prod {
     width: 50%;
     margin-bottom: 15px;
     padding: 0 5px 0 5px;
+  }
+  /* FOOTER-GENERAL */
+  .footer__menu {
+    width: 120px;
+  }
+  .footer__menu .footer__menu__list {
+    padding-left: 1rem;
+  }
+  .footer__redes {
+    padding-right: 1rem;
+    gap: 10px;
+  }
+  .footer__redes .footer__redes__text {
+    display: none;
+  }
+  .footer__redes .footer__redes__links {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__redes .footer__redes__links a {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  /* HEADER-GENERAL */
+  /* nav-bar-form */
+  .nav-link {
+    padding-left: 8px;
+  }
+  .d-flex {
+    margin-bottom: 12px;
+  }
+  .d-flex .btn {
+    padding: 0%;
+  }
+  .d-flex .img-nav {
+    height: 32px;
+    align-self: center;
+  }
+  .main__cat {
+    margin-top: 20px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+  .main__cat .main__cat__prod {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main__cat .main__cat__prod .cat__img__info h6 {
+    padding: 5px 0 5px 5px;
+    font-size: 15px;
+  }
+  .main__cat .main__cat__prod .cat__img__info h4 {
+    padding: 5px 0 0 5px;
   }
   /* FOOTER-GENERAL */
   .footer__menu {
