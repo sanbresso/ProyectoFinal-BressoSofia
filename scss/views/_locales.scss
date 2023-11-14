@@ -1,3 +1,41 @@
-.main__local__1 {
-    border: 10px solid black;
+h1 {
+    @extend%flex-center;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+#main__locales {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__local {
+    margin-top: 25px;
+
+    .main__local__info {
+
+        border-radius: 10px;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(103, 103, 103, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 25px;
+
+        h2 {
+            margin: 0;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        iframe {
+            border-radius: 10px;
+        }
+    }
+
 }
