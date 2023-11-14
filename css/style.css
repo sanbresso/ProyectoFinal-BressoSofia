@@ -195,6 +195,10 @@ main {
   font-weight: bold;
 }
 
+.main__local__1 {
+  border: 10px solid black;
+}
+
 @media (max-width: 480px) {
   body {
     font-size: 14px;
