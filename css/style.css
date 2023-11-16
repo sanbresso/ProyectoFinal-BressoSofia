@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .footer__principal .footer__menu__list .footer__menu__list__item a:hover, #header .nav-link .dropdown-toggle:hover, #header .nav-link:hover {
   color: black;
   text-decoration: underline;
@@ -9,7 +10,7 @@
   color: white;
 }
 
-h1, .main__title__cat p, .main__title__cat, #main__cat, .footer__copyright__text {
+.main__contact__section, h1, .main__title__cat p, .main__title__cat, #main__cat, .footer__copyright__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,6 +228,22 @@ h1 {
   border-radius: 10px;
 }
 
+.main__contact__section {
+  gap: 75px;
+  margin-top: 75px;
+}
+.main__contact__section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  gap: 5px;
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.8) 0%, rgba(103, 103, 103, 0.5) 50%, rgb(0, 0, 0) 100%);
+  border-radius: 10px;
+}
+
 @media (max-width: 480px) {
   body {
     font-size: 14px;
@@ -258,6 +275,20 @@ h1 {
     width: 50%;
     margin-bottom: 15px;
     padding: 0 5px 0 5px;
+  }
+  /* MAIN-CONTACTO */
+  .main__contact__section {
+    flex-direction: column;
+    margin: 25px 0 25px 0;
+    gap: 25px;
+  }
+  .main__contact__section div {
+    height: 200px;
+    width: 250px;
+  }
+  .main__contact__section div img {
+    height: auto;
+    width: 40px;
   }
   /* FOOTER-GENERAL */
   .footer__menu {
@@ -297,6 +328,7 @@ h1 {
     height: 32px;
     align-self: center;
   }
+  /* MAIN-CATÁLOGO*/
   .main__cat {
     margin-top: 20px;
     width: 80%;
@@ -314,6 +346,12 @@ h1 {
   }
   .main__cat .main__cat__prod .cat__img__info h4 {
     padding: 5px 0 0 5px;
+  }
+  /* MAIN-CONTACTO*/
+  .main__contact__section {
+    flex-direction: column;
+    margin: 25px 0 25px 0;
+    gap: 25px;
   }
   /* FOOTER-GENERAL */
   .footer__menu {

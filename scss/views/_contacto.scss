@@ -1,0 +1,16 @@
+.main__contact__section {
+    @extend%flex-center;
+    gap: 75px;
+    margin-top: 75px;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+        width: 300px;
+        gap: 5px;
+        background: linear-gradient(-45deg, rgba(255, 255, 255, 0.8) 0%, rgba(103, 103, 103, 0.5) 50%, rgba(0, 0, 0, 1) 100%);
+        border-radius: 10px;
+    }
+}

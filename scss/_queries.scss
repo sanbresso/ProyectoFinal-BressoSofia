@@ -31,7 +31,21 @@
             padding: 0 5px 0 5px;
         }
     }
-    
+
+    /* MAIN-CONTACTO */
+    .main__contact__section {
+        flex-direction: column;
+        margin: 25px 0 25px 0;
+        gap: 25px;
+        div {
+            height: 200px;
+            width: 250px;
+            img {
+                height: auto;
+                width: 40px;
+            }
+        }
+    }
     
     /* FOOTER-GENERAL */
     .footer__menu {
@@ -73,6 +87,7 @@
         }
     }
     
+    /* MAIN-CATÁLOGO*/
     .main__cat {
         margin-top: 20px;
         width: 80%;
@@ -93,6 +108,14 @@
               }
           }
       }
+
+       /* MAIN-CONTACTO*/
+    .main__contact__section {
+        flex-direction: column;
+        margin: 25px 0 25px 0;
+        gap: 25px;
+       
+    }
 
       /* FOOTER-GENERAL */
     .footer__menu {
