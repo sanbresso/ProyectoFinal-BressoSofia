@@ -2,21 +2,26 @@
     body {
         font-size: 14px;
     }
+
     /* HEADER-GENERAL */
     /* nav-bar-form */
     .nav-link {
         padding-left: 8px;
     }
+
     .d-flex {
         margin-bottom: 12px;
+
         .btn {
             padding: 0%;
         }
+
         .img-nav {
             height: 32px;
             align-self: center;
         }
     }
+
     /* MAIN-INDEX */
     .second-row {
         margin-top: 24px;
@@ -25,6 +30,7 @@
     /* MAIN-CATALOGO */
     .main__cat {
         margin-top: 15px;
+
         .main__cat__prod {
             width: 50%;
             margin-bottom: 15px;
@@ -37,32 +43,39 @@
         flex-direction: column;
         margin: 25px 0 25px 0;
         gap: 25px;
+
         div {
             height: 200px;
             width: 250px;
+
             img {
                 height: auto;
                 width: 40px;
             }
         }
     }
-    
+
     /* FOOTER-GENERAL */
     .footer__menu {
         width: 120px;
+
         .footer__menu__list {
             padding-left: 1rem;
         }
     }
+
     .footer__redes {
         padding-right: 1rem;
         gap: 10px;
+
         .footer__redes__text {
             display: none;
         }
+
         .footer__redes__links {
             display: flex;
             flex-direction: column;
+
             a {
                 margin-bottom: 10px;
             }
@@ -71,22 +84,26 @@
 }
 
 @media (min-width: 481px) and (max-width: 1023px) {
+
     /* HEADER-GENERAL */
     /* nav-bar-form */
     .nav-link {
         padding-left: 8px;
     }
+
     .d-flex {
         margin-bottom: 12px;
+
         .btn {
             padding: 0%;
         }
+
         .img-nav {
             height: 32px;
             align-self: center;
         }
     }
-    
+
     /* MAIN-CATÁLOGO*/
     .main__cat {
         margin-top: 20px;
@@ -94,45 +111,53 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 15px;
+
         .main__cat__prod {
             width: 100%;
             margin-bottom: 20px;
+
             .cat__img__info {
                 h6 {
                     padding: 5px 0 5px 5px;
                     font-size: 15px;
                 }
+
                 h4 {
                     padding: 5px 0 0 5px;
                 }
-              }
-          }
-      }
+            }
+        }
+    }
 
-       /* MAIN-CONTACTO*/
+    /* MAIN-CONTACTO*/
     .main__contact__section {
         flex-direction: column;
         margin: 25px 0 25px 0;
         gap: 25px;
-       
+
     }
 
-      /* FOOTER-GENERAL */
+    /* FOOTER-GENERAL */
     .footer__menu {
         width: 120px;
+
         .footer__menu__list {
             padding-left: 1rem;
         }
     }
+
     .footer__redes {
         padding-right: 1rem;
         gap: 10px;
+
         .footer__redes__text {
             display: none;
         }
+
         .footer__redes__links {
             display: flex;
             flex-direction: column;
+
             a {
                 margin-bottom: 10px;
             }

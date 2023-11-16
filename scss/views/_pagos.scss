@@ -1,0 +1,23 @@
+.main__pagos__section{
+    @extend%flex-center;
+    gap: 50px;
+    margin: 50px 0 50px 0;
+    div{
+        @extend%flex-center;
+        height: 50px;
+        width: 300px;
+        padding: 50px;
+        border-radius: 10px;
+        background: linear-gradient(-45deg, rgba(255, 255, 255, 1) 0%, rgba(103, 103, 103, 0.8) 75%, rgba(0, 0, 0, 1) 100%);
+    }
+}
+
+h3{
+    @extend%flex-center;
+}
+
+.main__pagos__tarjetas{
+    @extend%flex-center;
+    gap: 50px;
+    margin-top: 50px;
+}

@@ -10,7 +10,7 @@
   color: white;
 }
 
-.main__contact__section, h1, .main__title__cat p, .main__title__cat, #main__cat, .footer__copyright__text {
+.main__pagos__tarjetas, h3, .main__pagos__section div, .main__pagos__section, .main__contact__section, h1, .main__title__cat p, .main__title__cat, #main__cat, .footer__copyright__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,6 +242,23 @@ h1 {
   gap: 5px;
   background: linear-gradient(-45deg, rgba(255, 255, 255, 0.8) 0%, rgba(103, 103, 103, 0.5) 50%, rgb(0, 0, 0) 100%);
   border-radius: 10px;
+}
+
+.main__pagos__section {
+  gap: 50px;
+  margin: 50px 0 50px 0;
+}
+.main__pagos__section div {
+  height: 50px;
+  width: 300px;
+  padding: 50px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, rgb(255, 255, 255) 0%, rgba(103, 103, 103, 0.8) 75%, rgb(0, 0, 0) 100%);
+}
+
+.main__pagos__tarjetas {
+  gap: 50px;
+  margin-top: 50px;
 }
 
 @media (max-width: 480px) {
