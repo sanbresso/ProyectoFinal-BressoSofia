@@ -3,10 +3,7 @@
     gap: 75px;
     margin-top: 75px;
     div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @extend%flex-column;
         height: 300px;
         width: 300px;
         gap: 5px;

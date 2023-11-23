@@ -5,19 +5,13 @@ h1 {
     color: white;
 }
 
-#main__locales {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .main__local {
     margin-top: 25px;
+    @extend%flex-column;
 
     .main__local__info {
 
         border-radius: 10px;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(103, 103, 103, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
         padding: 15px;
         display: flex;
         justify-content: space-between;
@@ -38,4 +32,8 @@ h1 {
         }
     }
 
+}
+
+.bg__info{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(103, 103, 103, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
 }
